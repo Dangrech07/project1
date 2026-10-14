@@ -7,10 +7,12 @@ android {
     compileSdk {
         version = release(37)
     }
-
+    buildFeatures{
+        viewBinding = true
+    }
     defaultConfig {
         applicationId = "com.example.project1"
-        minSdk = 37
+        minSdk = 35
         targetSdk = 37
         versionCode = 1
         versionName = "1.0"
