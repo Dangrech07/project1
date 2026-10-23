@@ -11,9 +11,7 @@
         android:id="@+id/textView4"
         android:layout_width="219dp"
         android:layout_height="50dp"
-        android:layout_marginStart="48dp"
         android:layout_marginTop="30dp"
-        android:layout_marginEnd="48dp"
         android:text="Регистрация"
         android:textAlignment="center"
         android:textSize="34sp"
@@ -21,61 +19,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="219dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="48dp"
-        android:text="Логин"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
     <EditText
         android:id="@+id/register_login"
         android:layout_width="219dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="48dp"
+        android:layout_marginTop="50dp"
         android:ems="10"
+        android:hint="Логин"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="219dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="48dp"
-        android:text="Пароль"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register_login" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="219dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="48dp"
-        android:text="Подтверждение пароля"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register_password" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
         android:id="@+id/button_register_reg"
         android:layout_width="219dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
         android:layout_marginTop="30dp"
-        android:layout_marginEnd="48dp"
         android:text="Регистрация"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -85,9 +45,7 @@
         android:id="@+id/button_register_back"
         android:layout_width="219dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="48dp"
         android:onClick="Back_Click"
         android:text="Назад"
         app:layout_constraintEnd_toEndOf="parent"
@@ -98,24 +56,24 @@
         android:id="@+id/register_password"
         android:layout_width="219dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="48dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
+        android:hint="Пароль"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintTop_toBottomOf="@+id/register_login" />
 
     <EditText
         android:id="@+id/register_password_repit"
         android:layout_width="219dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="48dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
+        android:hint="Подтверждение пароля"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintTop_toBottomOf="@+id/register_password" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
