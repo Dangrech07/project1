@@ -33,6 +33,7 @@
                 android:id="@+id/button_search"
                 android:layout_width="82dp"
                 android:layout_height="wrap_content"
+                android:onClick="Search_Click"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/button_menu"
                 app:layout_constraintStart_toEndOf="@+id/button_home"
