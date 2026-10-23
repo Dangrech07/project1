@@ -1,6 +1,8 @@
 package com.example.project1
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +18,15 @@ class Register_window : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+    }
+    fun Back_Click(view: View)
+    {
+        val intent = Intent(
+            this,
+            MainActivity::class.java
+        )
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or
+                Intent.FLAG_ACTIVITY_SINGLE_TOP)
+        startActivity(intent)
     }
 }
