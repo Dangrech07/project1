@@ -32,13 +32,13 @@
                 android:text="Button" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/Notification"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Тестовое уведомление" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/Logout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="Logout_Click"
@@ -92,24 +92,23 @@
             android:layout_height="match_parent">
 
             <ImageButton
-                android:id="@+id/button_home"
+                android:id="@+id/menu_button_osnova"
                 android:layout_width="82dp"
                 android:layout_height="wrap_content"
-                android:onClick="Osnova_Click"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/button_search"
+                app:layout_constraintEnd_toStartOf="@+id/menu_button_search"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
 
             <ImageButton
-                android:id="@+id/button_search"
+                android:id="@+id/menu_button_search"
                 android:layout_width="82dp"
                 android:layout_height="wrap_content"
                 android:onClick="Search_Click"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/button_menu"
-                app:layout_constraintStart_toEndOf="@+id/button_home"
+                app:layout_constraintStart_toEndOf="@+id/menu_button_osnova"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
@@ -120,7 +119,7 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/button_account_info"
-                app:layout_constraintStart_toEndOf="@+id/button_search"
+                app:layout_constraintStart_toEndOf="@+id/menu_button_search"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
 
