@@ -24,12 +24,12 @@ class Menu : AppCompatActivity() {
         }
         var helper = Notifications(this)
         helper.createChannels()
-        binding.button2.setOnClickListener {
+        binding.Notification.setOnClickListener {
             helper.showHeadsUpNotification(
                 "бебебе",
                 "бамбамбам"
             )}
-        binding.buttonHome.setOnClickListener{
+        binding.menuButtonOsnova.setOnClickListener{
             val intent = Intent(this, osnova::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
             startActivity(intent) }
