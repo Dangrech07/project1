@@ -21,21 +21,21 @@ class Account_info : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-    }
-    fun Osnova_Click(view: View)
-    {
-        val intent = Intent(this, osnova::class.java)
-        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
-        startActivity(intent)
-    }
-    fun Menu_Click(view: View)
-    {
-        val intent = Intent(this, Menu::class.java)
-        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
-        startActivity(intent)
-    }
-    fun Search_Click(view: View)
-    {
+        binding.AIOsnovaButton.setOnClickListener {
+            val intent = Intent(this, osnova::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
+            startActivity(intent)
+        }
+        binding.MenuSearchButton.setOnClickListener {
 
+        }
+        binding.AIMenuButton.setOnClickListener {
+            val intent = Intent(this, Menu::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
+            startActivity(intent)
+        }
+        binding.AIAIButton.setOnClickListener {
+
+        }
     }
 }

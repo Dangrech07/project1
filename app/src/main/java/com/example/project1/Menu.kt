@@ -22,6 +22,26 @@ class Menu : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        binding.MenuOsnovaButoon.setOnClickListener{
+            val intent = Intent(this, osnova::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
+            startActivity(intent) }
+        binding.MenuSearchButton.setOnClickListener {
+
+        }
+        binding.MenuMenuButton.setOnClickListener {
+
+        }
+        binding.MenuAIButton.setOnClickListener {
+            val intent = Intent(this, Account_info::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
+            startActivity(intent)
+        }
+        binding.Logout.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(intent)
+        }
         var helper = Notifications(this)
         helper.createChannels()
         binding.Notification.setOnClickListener {
@@ -29,31 +49,5 @@ class Menu : AppCompatActivity() {
                 "бебебе",
                 "бамбамбам"
             )}
-        binding.menuButtonOsnova.setOnClickListener{
-            val intent = Intent(this, osnova::class.java)
-            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
-            startActivity(intent) }
         }
-
-
-
-
-        fun Account_info_Click(view: View) {
-            val intent = Intent(this, Account_info::class.java)
-            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
-            startActivity(intent)
-        }
-
-        fun Search_Click(view: View) {
-
-        }
-
-        fun Logout_Click(view: View) {
-            val intent = Intent(this, MainActivity::class.java)
-            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-            startActivity(intent)
-
-
-        }
-
     }

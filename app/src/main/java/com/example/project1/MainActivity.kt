@@ -21,25 +21,23 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-    }
-    fun Register_Click(view: View)
-    {
-        val intent = Intent(
-            this,
-            Register_window::class.java
-        )
-        startActivity(intent)
-    }
-    fun Login_Click(view: View)
-    {
-        val intent = Intent(
-            this,
-            osnova::class.java
-        )
-        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or
-        Intent.FLAG_ACTIVITY_CLEAR_TASK
-        startActivity(intent)
-        finish()
+        binding.LoginLoginButton.setOnClickListener {
+            val intent = Intent(
+                this,
+                osnova::class.java
+            )
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or
+                    Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(intent)
+            finish()
+        }
+        binding.LoginRegisterButton.setOnClickListener {
+            val intent = Intent(
+                this,
+                Register_window::class.java
+            )
+            startActivity(intent)
+        }
     }
 
 }

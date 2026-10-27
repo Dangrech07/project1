@@ -21,15 +21,17 @@ class Register_window : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-    }
-    fun Back_Click(view: View)
-    {
-        val intent = Intent(
-            this,
-            MainActivity::class.java
-        )
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or
-                Intent.FLAG_ACTIVITY_SINGLE_TOP)
-        startActivity(intent)
+        binding.RegisterRegisterButton.setOnClickListener {
+
+        }
+        binding.RegisterBackButton.setOnClickListener {
+            val intent = Intent(
+                this,
+                MainActivity::class.java
+            )
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or
+                    Intent.FLAG_ACTIVITY_SINGLE_TOP)
+            startActivity(intent)
+        }
     }
 }

@@ -11,6 +11,9 @@
         android:id="@+id/scrollView2"
         android:layout_width="410dp"
         android:layout_height="630dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/AI_ButtomNav"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/navigationView">
@@ -78,6 +81,9 @@
         android:id="@+id/navigationView"
         android:layout_width="410dp"
         android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -108,63 +114,57 @@
     </com.google.android.material.navigation.NavigationView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:layout_width="410dp"
-        android:layout_height="50dp"
+        android:id="@+id/AI_ButtomNav"
+        android:layout_width="409dp"
+        android:layout_height="49dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <ImageButton
-                android:id="@+id/menu_button_osnova"
+                android:id="@+id/Menu_Search_Button"
                 android:layout_width="82dp"
                 android:layout_height="wrap_content"
-                android:onClick="Osnova_Click"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/menu_button_search"
-                app:layout_constraintHorizontal_bias="0.291"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/AI_Menu_Button"
+                app:layout_constraintStart_toEndOf="@+id/AI_osnova_Button"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
 
             <ImageButton
-                android:id="@+id/menu_button_search"
+                android:id="@+id/AI_Menu_Button"
                 android:layout_width="82dp"
                 android:layout_height="wrap_content"
-                android:onClick="Search_Click"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/button_menu"
-                app:layout_constraintStart_toEndOf="@+id/menu_button_osnova"
+                app:layout_constraintEnd_toStartOf="@+id/AI_AI_Button"
+                app:layout_constraintStart_toEndOf="@+id/Menu_Search_Button"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
 
             <ImageButton
-                android:id="@+id/button_menu"
-                android:layout_width="82dp"
-                android:layout_height="wrap_content"
-                android:onClick="Menu_Click"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/button_account_info"
-                app:layout_constraintStart_toEndOf="@+id/menu_button_search"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/ic_launcher_foreground" />
-
-            <ImageButton
-                android:id="@+id/button_account_info"
+                android:id="@+id/AI_AI_Button"
                 android:layout_width="82dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/button_menu"
+                app:layout_constraintStart_toEndOf="@+id/AI_Menu_Button"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+
+            <ImageButton
+                android:id="@+id/AI_osnova_Button"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/Menu_Search_Button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.bottomnavigation.BottomNavigationView>
