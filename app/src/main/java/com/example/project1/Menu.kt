@@ -22,7 +22,7 @@ class Menu : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        binding.MenuOsnovaButoon.setOnClickListener{
+        binding.MenuOsnovaButton.setOnClickListener{
             val intent = Intent(this, osnova::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
             startActivity(intent) }

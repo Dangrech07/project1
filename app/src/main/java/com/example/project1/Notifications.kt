@@ -104,7 +104,12 @@ class Notifications(private val context: Context) {
             .setVibrate(longArrayOf(0, 500, 200, 500))        // Вибрация
             .addAction(                                       // Добавляем кнопку действия
                 R.drawable.ic_launcher_foreground,            // Иконка кнопки
-                "Открыть",                                    // Текст кнопки
+                "Открыть", // Текст кнопки
+                pendingIntent                                 // PendingIntent для кнопки
+            )
+            .addAction(                                       // Добавляем кнопку действия
+                R.drawable.ic_launcher_foreground,            // Иконка кнопки
+                "Закрыть", // Текст кнопки
                 pendingIntent                                 // PendingIntent для кнопки
             )
 

@@ -11,9 +11,6 @@
         android:id="@+id/navigationView"
         android:layout_width="410dp"
         android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -26,6 +23,7 @@
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
+                android:layout_marginStart="20dp"
                 android:text="Главная"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -36,6 +34,7 @@
                 android:id="@+id/button_add_post"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -49,7 +48,6 @@
         android:layout_height="630dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/Osnova_BottomNav"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/navigationView">
@@ -71,6 +69,7 @@
                         android:id="@+id/imageButton8"
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -92,8 +91,10 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="match_parent"
-                android:layout_height="410dp"
+                android:layout_width="370dp"
+                android:layout_height="370dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
 
             <com.google.android.material.navigation.NavigationView
@@ -108,6 +109,8 @@
                         android:id="@+id/textView7"
                         android:layout_width="0dp"
                         android:layout_height="0dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
                         android:text="TextView"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -128,6 +131,7 @@
                         android:id="@+id/button_like"
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/button_commet"
                         app:layout_constraintStart_toStartOf="parent"
@@ -155,8 +159,7 @@
         android:layout_height="49dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView3">
+        app:layout_constraintStart_toStartOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -166,6 +169,7 @@
                 android:id="@+id/Osnova_AI_Button"
                 android:layout_width="82dp"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/Osnova_Menu_Button"
@@ -196,6 +200,7 @@
                 android:id="@+id/Osnova_Osnova_Button"
                 android:layout_width="82dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/Osnova_Search_Button"
                 app:layout_constraintStart_toStartOf="parent"
