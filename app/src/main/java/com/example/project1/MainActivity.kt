@@ -10,7 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.project1.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    private  lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -36,6 +36,8 @@ class MainActivity : AppCompatActivity() {
                 this,
                 Register_window::class.java
             )
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or
+                    Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(intent)
         }
     }

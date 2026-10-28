@@ -10,7 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.project1.databinding.ActivityRegisterWindowBinding
 
 class Register_window : AppCompatActivity() {
-    private  lateinit var binding: ActivityRegisterWindowBinding
+    private lateinit var binding: ActivityRegisterWindowBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

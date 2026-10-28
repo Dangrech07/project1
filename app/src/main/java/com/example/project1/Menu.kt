@@ -27,7 +27,9 @@ class Menu : AppCompatActivity() {
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
             startActivity(intent) }
         binding.MenuSearchButton.setOnClickListener {
-
+            val intent = Intent(this, Search_window::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
+            startActivity(intent)
         }
         binding.MenuMenuButton.setOnClickListener {
 
