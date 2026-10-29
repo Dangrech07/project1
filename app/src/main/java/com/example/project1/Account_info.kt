@@ -39,5 +39,8 @@ class Account_info : AppCompatActivity() {
         binding.AIAIButton.setOnClickListener {
 
         }
+        binding.AIChangeButton.setOnClickListener {
+
+        }
     }
 }

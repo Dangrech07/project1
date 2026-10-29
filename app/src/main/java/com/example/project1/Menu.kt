@@ -46,7 +46,7 @@ class Menu : AppCompatActivity() {
         }
         var helper = Notifications(this)
         helper.createChannels()
-        binding.Notification.setOnClickListener {
+        binding.NotificationTest.setOnClickListener {
             helper.showHeadsUpNotification(
                 "бебебе",
                 "бамбамбам"
