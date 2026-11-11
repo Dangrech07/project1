@@ -9,8 +9,9 @@
 
     <ScrollView
         android:id="@+id/scrollView4"
-        android:layout_width="410dp"
-        android:layout_height="791dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/Menu_bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/navigationView">
@@ -21,20 +22,20 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/Light_theme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:insetLeft="20dp"
                 android:insetRight="20dp"
-                android:text="Button" />
+                android:text="Светлая тема" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/Dark_theme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:insetLeft="20dp"
                 android:insetRight="20dp"
-                android:text="Button" />
+                android:text="Темная тема" />
 
             <Button
                 android:id="@+id/NotificationTest"
