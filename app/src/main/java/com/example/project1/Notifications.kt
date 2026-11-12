@@ -90,7 +90,7 @@ class Notifications(private val context: Context) {
 
         // Строим уведомление с помощью NotificationCompat.Builder
         val builder = NotificationCompat.Builder(context, HEADS_UP_CHANNEL_ID)
-            .setSmallIcon(R.drawable.ic_launcher_foreground)  // Иконка в статус-баре(обязательно!)
+            .setSmallIcon(R.drawable.ai_icon)  // Иконка в статус-баре(обязательно!)
             .setContentTitle(title)                           // Заголовок
             .setContentText(message)                          // Текст уведомления
             .setPriority(NotificationCompat.PRIORITY_HIGH)    // Приоритет для старых версий
@@ -105,11 +105,6 @@ class Notifications(private val context: Context) {
             .addAction(                                       // Добавляем кнопку действия
                 R.drawable.ic_launcher_foreground,            // Иконка кнопки
                 "Открыть", // Текст кнопки
-                pendingIntent                                 // PendingIntent для кнопки
-            )
-            .addAction(                                       // Добавляем кнопку действия
-                R.drawable.ic_launcher_foreground,            // Иконка кнопки
-                "Закрыть", // Текст кнопки
                 pendingIntent                                 // PendingIntent для кнопки
             )
 

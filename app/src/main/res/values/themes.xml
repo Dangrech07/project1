@@ -8,5 +8,7 @@
         <item name="colorOnSurface">@color/white</item>
         <item name="android:statusBarColor">@color/white</item>
         <item name="android:textColor">@color/lightGreen</item>
+        <item name="android:colorButtonNormal">@color/white</item>
+        <item name="tint">@color/lightGreen</item>
     </style>
 </resources>
