@@ -21,15 +21,24 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val userName = intent.getStringExtra("user_name")?: "Гость"
+        binding.LoginLoginText.setText(userName)
+        val password = intent.getStringExtra("password")
+
         binding.LoginLoginButton.setOnClickListener {
-            val intent = Intent(
-                this,
-                osnova::class.java
-            )
-            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or
-                    Intent.FLAG_ACTIVITY_CLEAR_TASK
-            startActivity(intent)
-            finish()
+           if(binding.LodinPassword.text.toString() == password) {
+               val intent = Intent(
+                   this,
+                   osnova::class.java
+               )
+               intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or
+                       Intent.FLAG_ACTIVITY_CLEAR_TASK
+               startActivity(intent)
+               finish()
+           }else{
+               binding.MistakeText.text = "Логин или пароль неверны!"
+           }
         }
         binding.LoginRegisterButton.setOnClickListener {
             val intent = Intent(
@@ -40,8 +49,10 @@ class MainActivity : AppCompatActivity() {
                     Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(intent)
         }
-        val userName =
-            intent.getStringExtra("user_name",)?: "Гость"
+
+
+
+
 
     }
 
