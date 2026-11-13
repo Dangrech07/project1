@@ -33,5 +33,12 @@ class Register_window : AppCompatActivity() {
                     Intent.FLAG_ACTIVITY_SINGLE_TOP)
             startActivity(intent)
         }
+        binding.RegisterRegisterButton.setOnClickListener {
+            val intent = Intent(this,
+                MainActivity::class.java).apply {
+                putExtra("user_name", "Алексей")
+            }
+            startActivity(intent)
+        }
     }
 }

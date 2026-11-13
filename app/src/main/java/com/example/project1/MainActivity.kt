@@ -40,6 +40,9 @@ class MainActivity : AppCompatActivity() {
                     Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(intent)
         }
+        val userName =
+            intent.getStringExtra("user_name",)?: "Гость"
+
     }
 
 }

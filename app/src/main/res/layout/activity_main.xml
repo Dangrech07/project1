@@ -17,7 +17,8 @@
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/TextAppearance.AppCompat.Title."/>
 
     <EditText
         android:id="@+id/editTextText"
