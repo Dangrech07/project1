@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
                binding.MistakeText.text = "Логин или пароль неверны!"
            }
         }
+
         binding.LoginRegisterButton.setOnClickListener {
             val intent = Intent(
                 this,
@@ -49,10 +50,6 @@ class MainActivity : AppCompatActivity() {
                     Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(intent)
         }
-
-
-
-
 
     }
 

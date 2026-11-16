@@ -21,18 +21,13 @@ class Register_window : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
         binding.RegisterRegisterButton.setOnClickListener {
             val login = binding.registerLogin.text.toString()
             val pass = binding.registerPassword.text.toString()
             val reppass = binding.registerPasswordRepit.text.toString()
-            if (login == "") {
-                binding.MistakeText.text = "Логин не может быть пустым!"
-            }
-            else {
-                if (pass == "") {
-                    binding.MistakeText.text = "Поле 'Пароль' не может быть пустым!"
-                }
-                else {
+            if (login != "") {
+                if (pass != "") {
                     if (pass == reppass) {
                         val intent = Intent(
                             this,
@@ -42,11 +37,17 @@ class Register_window : AppCompatActivity() {
                             putExtra("password", pass)
                         }
                         startActivity(intent)
-                    }else {
+                    }
+                    else {
                         binding.MistakeText.text = "Пароли не совпадают!"
                     }
-
                 }
+                else {
+                    binding.MistakeText.text = "Поле 'Пароль' не может быть пустым!"
+                }
+            }
+            else {
+                binding.MistakeText.text = "Логин не может быть пустым!"
             }
         }
 
@@ -58,7 +59,6 @@ class Register_window : AppCompatActivity() {
            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or
                     Intent.FLAG_ACTIVITY_SINGLE_TOP)
            startActivity(intent)
-        //val ex = StringBuilder()
         }
     }
 }
