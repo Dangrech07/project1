@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
         }
         var a = Class();
         var bd=a.openReadyDatabase(this )
-        a.insertUser(bd,5,"kuyd")
 
         val userName = intent.getStringExtra("user_name")?: "Гость"
         binding.LoginLoginText.setText(userName)
